@@ -7,16 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="position: relative;" onscroll="closetheMenu()">
+<body>
 
     <secton class="header" id="header">
-        <p class="close" onclick="closetheMenu()">Close</p>
-        <h1 class="logo">TGS STORE</h1>
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
 
         <div>
             <ul id="navbar">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="Contact.html">Contact</a></li>
@@ -25,52 +24,13 @@
         </div>
     </secton>
 
-    <section id="hero" onclick="closetheMenu()">
-        <h4>Trade-in-offer</h4>
-        <h2>Super value deals</h2>
-        <h1>On all products</h1>
+    <section id="page-header">
+        <h2>#stayhome</h2>
         <p>Save more with coupons & up to 70% off! </p>
-        <button>Shop Now</button>
     </section>
-
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="img/features/f1.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f2.png" alt="">
-            <h6>Online Order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f3.png" alt="">
-            <h6>Save Money</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f4.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f5.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f6.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f6.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f6.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-    </section>
+    
     <section id="product1" class="section-p1">
-        <h2>Featured Products</h2>
-        <p>Summer Collection New Mordern Design</p>
-        <div class="pro-container">
+        <div class="pro-container" onclick="window.location.href='sproduct.html';">
             <div class="pro">
                 <img src="img/products/f1.png" alt="" class="img">
                 <div class="des">
@@ -143,17 +103,6 @@
                 </div>
                 <a href="#"><img src="img/features/shopping.png" alt="" class="cart"></a>
             </div>
-        </div>
-    </section>
-    <section id="banner" class="section-m1">
-        <h4>Repair Services</h4>
-         <h2>Up to <span>70% Off</span> - All t-shirt & Accessories</h2>
-         <button class="normal">Explore More</button>
-    </section>
-    <section id="product1" class="section-p1">
-        <h2>New Arrivals</h2>
-        <p>Summer Collection New Mordern Design</p>
-        <div class="pro-container">
             <div class="pro">
                 <img src="img/products/n1.png" alt="" class="img">
                 <div class="des">
@@ -228,7 +177,12 @@
             </div>
         </div>
     </section>
-    
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+    </section>
 
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
@@ -240,7 +194,6 @@
             <button class="normal">Sign Up</button>
         </div>
     </section>
-
     <footer class="">
         <div class="col">
             <h4>Contact</h4>
@@ -283,7 +236,6 @@
             <p>2024 Iyiola Ajibola - HTML CSS PROJECT E-commerce Website</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
