@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background: rgb(34, 134, 255) url(header.jpeg) ;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    flex: 1;
+    padding: 2% 6%;
+}
+.navlinks ul li{
+    display: inline-block;
+    padding-right: 60px;
+}
+.navlinks ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35%;
+}
+nav h1{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', cursive;
+    color: #fff;
+    white-space: nowrap;
+    border-bottom: 3px solid rgb(34, 134, 255);
+    padding-bottom: 30px;
+}
+.navlinks ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 1s;
+    white-space: nowrap;
+    font-weight: 700;
+}
+.navlinks ul li a:hover{
+    color: #2286ff;
+}
+.header .text{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.header .text h2{
+    color: #2286ff;
+    font-size: 70px;
+}
+.header .text p{
+    color: #fff;
+}
+.btn{
+    height: 50px;
+    width: 180px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+.btn:hover{
+    background: #2286ff;
+    transition: 1.5s;
+    border-radius: 30px;
+}
+.about h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #2286ff;
+    text-align: center;
+}
+.container{
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 0px;
+}
+.about{
+    margin-bottom: 120px;
+}
+.about .about-content{
+    max-width: 100%;
+    max-height: 80vh;
+    display: flex;
+}
+.about .about-content .about-img img{
+    padding-right: 100px;
+    border-radius: 2rem ;
+}
+.about .about-content div{
+    padding-top: 70px;
+}
+.about .about-content div p{
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 3rem;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+.about .about-content div button{
+    width: 120px;
+}
+.btn2{
+    height: 50px;
+    width: 180px;
+    border: 5px solid #2286ff;
+    color: #fff;
+    background: #2286ff;
+    white-space: nowrap;
+    margin-top: 20px;
+    border-radius: 2rem;
+}
