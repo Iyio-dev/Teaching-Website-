@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.dot{
+    position: absolute;
+    top: 10%;
+    left: 92%;
+    width: 10px;
+    height: 30px;
+}
+
+.store{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 60px;
+}
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1,
+.main p{
+    text-align: center;
+    margin-top: 50px;
+    white-space: wrap;
+}
+
+.main h1{
+    font-size: 50px;
+    color: grey;
+}
+
+.main p{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.main .btn1{
+    width: 180px;
+    height: 55px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: rgb(8, 100, 8);
+    font-size: 20px;
+    transition: 1s;
+}
+
+.main .btn1:hover{
+    color: rgb(8, 100, 8);
+    background: #fff;
+    border: 1px solid rgb(8, 100, 8);
+}
+
+.btn2{
+    position: absolute;
+    bottom: 30px;
+    margin-left: 30px;
+    width: 220px;
+    height: 45px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: orangered;
+    font-size: 20px;
+}
+@media (max-width: 1000px) {
+    .main h1{
+        font-size: 40px;
+        margin-top: 25px;
+    }
+    .main p{
+        font-size: 15px;
+        padding-top: 0px;
+        margin-top: 15px;
+    }
+    .store{
+        top: 30%;
+    }
+
+}
+
+.container2{
+    height: 80px;
+    width: 600px;
+    box-shadow: 1px 1px 1px 1px rgb(102, 96, 96);
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+}
+
+.container2 .loading{
+    height: 10px;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px rgb(102, 96, 96);
+    border-radius: 20px;
+}
+
+.container2 .loading .loaded{
+    width: 0%;
+    height: 100%;
+    background: rgb(8, 100, 8);
+    animation: animate 6s linear infinite;
+    border-radius: 20px;
+}
+
+@keyframes animate {
+    0%{
+        width: 0%;
+    }
+    20%{
+        width: 10%;
+    }
+    40%{
+        width: 40%;
+    }
+    60%{
+        width: 60%;
+    }
+    80%{
+        width: 63%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <img src="dot.png" class="dot">
+        <img src="store.png" class="store">
+        <div class="main">
+            <h1>Google Play</h1>
+            <p>Sign in to get the latest Android apps, games, movies, music,& more</p>
+            <button class="btn1">Sign In</button>
+        </div>
+        <button class="btn2">Trouble signing in</button>
+        <div class="container2">
+            <h1>LOADING...</h1>
+            <div class="loading">
+                <div class="loaded"></div>
+            </div>
+        </div>        
+    </div>
+    <script>
+        co
+    </script>
+</body>
+</html>
