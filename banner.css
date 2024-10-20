@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 120px;
+}
+.container{
+    background: url("thumbnail-1.png");
+    background-position: center;
+    background-size: cover;
+    height: 280px;
+    border-radius: 30px;
+    padding: 47px;
+
+}
+.container img{
+    height: 60px;
+    border-radius: 10px;
+    width: 160px;
+    margin-bottom: 30px;
+}
+.container p{
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', cursive;
+    font-size: 23px;
+}
+.btn{
+    height: 50px;
+    width: 115px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 30px;
+}
